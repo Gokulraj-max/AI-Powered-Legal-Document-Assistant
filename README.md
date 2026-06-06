@@ -29,7 +29,7 @@ graph TD
     H --> I[Prompt Assembly: Context + Query]
     I --> J[LLM: Gemini API]
     J --> K[Streamlit Chat UI]
-    H -.-->|Source Citations| K
+    H -. "Source Citations" .-> K
 ```
 
 ---
