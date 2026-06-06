@@ -40,18 +40,37 @@ graph TD
 - Python 3.10+ (Native Windows installation is recommended)
 - A Google Gemini API Key (obtained from [Google AI Studio](https://aistudio.google.com/))
 
-### Running the Application
+### Setup & Launch Instructions
 
-1. Open PowerShell or command line.
-2. Navigate to the project directory:
+1. **Clone the Repository:**
+   Open PowerShell or command line and run:
    ```powershell
-   cd C:\Projects\AI-Powered-Legal-Document-Assistant
+   git clone https://github.com/Gokulraj-max/AI-Powered-Legal-Document-Assistant.git
+   cd AI-Powered-Legal-Document-Assistant
    ```
-3. Run the Streamlit application using the virtual environment:
+
+2. **Create a Virtual Environment:**
+   ```powershell
+   python -m venv venv
+   ```
+
+3. **Install Dependencies:**
+   Ensure pip is up-to-date and install the required libraries:
+   ```powershell
+   # Upgrade pip inside the virtual environment
+   .\venv\Scripts\python.exe -m pip install --upgrade pip
+
+   # Install requirements
+   .\venv\Scripts\pip.exe install -r requirements.txt
+   ```
+
+4. **Run the Streamlit Application:**
    ```powershell
    .\venv\Scripts\streamlit.exe run app.py
    ```
-4. Access the web interface in your browser (usually defaults to `http://localhost:8501`).
+
+5. **Access the UI:**
+   Open your browser and navigate to `http://localhost:8501`.
 
 ---
 
